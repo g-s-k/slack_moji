@@ -1,8 +1,12 @@
 [package]
 name = "slack_moji"
+description = "draw ASCII text as bitmaps using Slack emoji"
 version = "0.0.1"
 authors = ["George Kaplan <george.kaplan@visionistinc.com>"]
 edition = "2018"
+license = "GPL-3.0"
+repository = "https://github.com/g-s-k/slack_moji"
+readme = "./README.md"
 
 [dependencies]
 structopt = "0.2.15"
