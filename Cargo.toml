@@ -1,0 +1,9 @@
+[package]
+name = "slack_moji"
+version = "0.0.1"
+authors = ["George Kaplan <george.kaplan@visionistinc.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.15"
+ansi_term = "0.11.0"
