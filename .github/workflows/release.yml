@@ -54,6 +54,7 @@ jobs:
     - name: Publish binary for ${{ matrix.os }}
       id: upload_release_asset
       uses: actions/upload-release-asset@v1
+      shell: bash
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
