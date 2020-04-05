@@ -35,7 +35,7 @@ jobs:
     needs: [create_release]
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [ubuntu-latest, macOS-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
@@ -54,7 +54,6 @@ jobs:
     - name: Publish binary for ${{ matrix.os }}
       id: upload_release_asset
       uses: actions/upload-release-asset@v1
-      shell: bash
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
